@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_search"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/main_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/rangeseekbar_line_selected"
+         >
+ <TextView
+                android:id="@+id/text_meituan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="美团"
+                android:textColor="@color/white"
+                android:textSize="22.0sp" />
+        
+      <ImageView
+          android:id="@+id/image_meituan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text_meituan"
+                 android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_action_location"/>
+ 
+      <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image_meituan"
+                android:gravity="center"
+                android:text="上海"
+                android:textColor="@color/white"
+                android:textSize="14.0sp" />
+      
+      
+      <ImageView
+          android:id="@+id/image_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_search_gray"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5px"
+        android:background="@color/litlegray" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/total_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+             android:background="@drawable/selector_btn_text"
+             >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:gravity="left"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/ic_category_movie"/>
+
+            <TextView
+                android:id="@+id/text_category"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="电影"
+                android:textColor="@color/green"
+                android:textSize="14.0sp" />
+            
+            
+              <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/selector_arrow_dropdown"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/litlegray" />
+
+        <LinearLayout
+            android:id="@+id/ofprice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+           <ImageView
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/ic_location"
+                 /> 
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:gravity="center"
+                 android:layout_marginLeft="5dp"
+                android:text="全城"
+                android:textColor="@color/huise"
+                android:textSize="14.0sp" />
+            
+            
+            <ImageView
+                 android:id="@+id/iv_price_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/ic_dropdown_arrow"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/litlegray" />
+
+        <LinearLayout
+            android:id="@+id/ofprice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+             <ImageView
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_order"
+                 /> 
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="默认排序"
+                android:textColor="@color/huise"
+                android:textSize="14.0sp" />
+            
+            
+            <ImageView
+                 android:id="@+id/iv_price_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/ic_dropdown_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5px"
+        android:background="@color/litlegray" />
+
+
+</LinearLayout>
